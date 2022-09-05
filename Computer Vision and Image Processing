@@ -1,0 +1,21 @@
+Computer Vision and Image Processing 
+
+W1 Graded Quiz: Overview of Computer Vision and its Applications
+
+W2 Graded Quiz: Image Processing
+
+W3 Graded Quiz: Image Classification
+
+W4 Graded Quiz: Neural Networks
+
+W5 Graded Quiz: Object Detection
+
+W6 Project: 
+Build a computer vision app that you will deploy on the cloud through Code Engine. For the project, you will create a custom classifier, 
+train it and test it on your own images.
+
+> For the project in this module, you will develop a new custom classifier using one of the classification methods you learnt and then deploy it as 
+a web app using Code Engine. There are various advantages to deploying your classifier. First, you can share your classifier with anyone in the 
+world. They simply need to enter the URL of your model into any web browser. Second, you can showcase your web app in your portfolio and your 
+potential future employers can interact with your project. For each class and its prediction, take screenshots of your test images and the 
+predictions from Code Engine.
