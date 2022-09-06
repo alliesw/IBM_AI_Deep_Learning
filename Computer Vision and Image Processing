@@ -7,6 +7,10 @@ W1 Graded Quiz: Overview of Computer Vision and its Applications
 3. 
 
 W2 Graded Quiz: Image Processing
+
+
+
+W3 Graded Quiz: Image Classification
 1. You train a Support Vector Machine and obtain an accuracy of 100% on the training data and 50% on the validation data. This is an example of:
 Overfitting 
 2. When dealing with image classification, what kind of challenges do we face with images?
@@ -19,8 +23,12 @@ Histogram of Oriented Gradients
 What should you do to the parameter Gamma?
 Decrease Gamma 
 
-
-W3 Graded Quiz: Image Classification
+1. How many colour channels does a Grayscale image have?
+1 
+2. When classifying images into tiger and lions, which image classification algorithm finds the best plane that divides a dataset into two classes?
+Support Vector Machines (SVMs)
+3. In a sequence of array, what does the argmax function return?In a sequence of array, what does the argmax function return?
+The index corresponding to the max value 
 
 W4 Graded Quiz: Neural Networks
 
