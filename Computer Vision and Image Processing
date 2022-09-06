@@ -51,6 +51,16 @@ ResNet
 Activation Function 
 
 W5 Graded Quiz: Object Detection
+If we wanted to identify the cat in the image below, what kind of algorithm will we be working with?
+Classifier
+The following image with the bounding box is an example of
+object detection 
+Select the diagram that best demonstrates object detection model that uses a bounding box.
+Diagram w/ box 
+Consider the actual bounding box in red and the predicted bounding box in blue. What loss would you use to determine the performance of your model's output?
+Squared Loss 
+What are the following features called?
+Haar-like features
 
 W6 Project: 
 Build a computer vision app that you will deploy on the cloud through Code Engine. For the project, you will create a custom classifier, 
