@@ -7,8 +7,16 @@ W1 Graded Quiz: Overview of Computer Vision and its Applications
 3. 
 
 W2 Graded Quiz: Image Processing
-
-
+1. What is linear filtering?
+Std way to filter images using convolution
+2. An application of the ImageOps module is:
+In PIL as flip and mirror functions
+3. Images can be smoothed using:
+Gaussian Blur 
+4. In the linear transform of the brightness and contrast adjustments
+Alpha is simple contrast control and beta is simple brightness control
+5. What are Intensity Transformations?
+Changing one pixel at a time 
 
 W3 Graded Quiz: Image Classification
 1. You train a Support Vector Machine and obtain an accuracy of 100% on the training data and 50% on the validation data. This is an example of:
