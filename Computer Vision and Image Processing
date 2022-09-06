@@ -39,6 +39,16 @@ Support Vector Machines (SVMs)
 The index corresponding to the max value 
 
 W4 Graded Quiz: Neural Networks
+1. Which of the following are types of CNN architecture? Check all that apply:
+VGGNet ; AlexNet 
+2. Which of the following helps to reduce the number of parameters of an input image and still preserves the important features?
+Pooling 
+3. If I add more neurons to my neural network, what may I expect?
+Overfitting 
+4. Which of the following architecture solved the vanishing gradient problem by allowing the gradient to bypass different layers to improve performance?
+ResNet
+5. When we apply logistic regression in the context of Neural Networks, what is that called?
+Activation Function 
 
 W5 Graded Quiz: Object Detection
 
