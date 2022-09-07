@@ -60,4 +60,55 @@ __init__,__getitem__ and __len__
 #We will read the csv in __init__ but leave the reading of images to __getitem__. This is memory efficient because all the images 
 #are not stored in the memory at once but read as required.
 
+#W5 Deep Neural Networks 
+#(1). Consider the following  class or Module: 
+#How many times should the activation function (like sigmoid) be applied in the def forward(self, x) if the result contains multiple classes?
+class Net(nn.model):
+  def __init__(self, D_in, H1, H2, D_out):
+  	super(Net, self).__init__()
+    self.linear1 = nn.Linear(D_in, H1)
+    self.linear2 = nn.Linear(H1, H2)
+    self.linear3 = nn.Linear(H2, D_out)
+  def forward(self, x):
+      (Multiple Choice)
+    return x
+# Answer: 2 (2 times)
 
+(2). How many hidden layers are there in this model?
+class Net(nn.Module):
+    # Constructor
+    def __init__(self, D_in, H1, H2, D_out):
+        super(Net, self).__init__()
+        self.linear1 = nn.Linear(D_in, H1)
+        self.linear2 = nn.Linear(H1, H2)
+        self.linear3 = nn.Linear(H2, D_out)
+    
+    # Prediction
+    def forward(self,x):
+        x = torch.sigmoid(self.linear1(x)) 
+        x = torch.sigmoid(self.linear2(x))
+        x = self.linear3(x)
+        return x
+        
+model = Net(3,5,4,1)
+
+# Answer: 2 (2 hidden layers in this model)
+
+# Explanation: 
+# Example basic deep neural network with 4 layers: 1 input layer, 2 hidden layers, and 1 output layer. All of the layers are fully connected.
+def initialization(self):
+    # number of nodes in each layer
+    input_layer=self.sizes[0]
+    hidden_1=self.sizes[1]
+    hidden_2=self.sizes[2]
+    output_layer=self.sizes[3]
+
+    params = {
+        'W1':np.random.randn(hidden_1, input_layer) * np.sqrt(1. / hidden_1),
+        'W2':np.random.randn(hidden_2, hidden_1) * np.sqrt(1. / hidden_2),
+        'W3':np.random.randn(output_layer, hidden_2) * np.sqrt(1. / output_layer)
+    }
+
+    return params
+    
+ 
