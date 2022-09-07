@@ -1,0 +1,10 @@
+Q3. What is the purpose of using dropout?
+Reduce the impact of noise or overfitting
+
+Q2. Consider the tensor x and the neural network object model that uses dropout . How would you make a prediction after training ?
+model.eval()
+yhat=model(x)
+
+Q3. Select the constructer value to let 40% of the  activations to the  shut off 
+nn.Dropout(0.4)
+
