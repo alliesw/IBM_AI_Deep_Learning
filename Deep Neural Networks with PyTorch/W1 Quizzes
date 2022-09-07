@@ -1,0 +1,17 @@
+1.2 Two-Dimensional Tensors Quiz 
+
+(1). What is the output of a.size() and a.ndimension()?
+In [1]: a=torch.tensor([[0,1,1],[1,0,1]])
+      a.size()
+      a.ndimension()
+
+Out[1]: (2,3), 2
+
+(2). What is the result  of the following:
+In [2]: import torch
+    A = torch.tensor([[0, 1, 1], [1, 0, 1]])
+    B = torch.tensor([[1, 1], [1, 1], [-1, 1]])
+    A_times_B = torch.mm(A,B)
+    print(A_times_B)
+
+Out[2]: tensor([[0, 2], [0, 2]])
