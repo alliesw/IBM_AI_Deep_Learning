@@ -1,13 +1,13 @@
-1.2 Two-Dimensional Tensors Quiz 
+#1.2 Two-Dimensional Tensors Quiz 
 
-(1). What is the output of a.size() and a.ndimension()?
+#(1). What is the output of a.size() and a.ndimension()?
 In [1]: a=torch.tensor([[0,1,1],[1,0,1]])
       a.size()
       a.ndimension()
 
 Out[1]: (2,3), 2
 
-(2). What is the result  of the following:
+#(2). What is the result  of the following:
 In [2]: import torch
     A = torch.tensor([[0, 1, 1], [1, 0, 1]])
     B = torch.tensor([[1, 1], [1, 1], [-1, 1]])
@@ -15,3 +15,27 @@ In [2]: import torch
     print(A_times_B)
 
 Out[2]: tensor([[0, 2], [0, 2]])
+
+#1. What task does the following lines of code perform?
+In [1]:
+q=torch.tensor(1.0,requires_grad=True)
+fq=2q**3+q
+fq.backward()
+q.grad
+
+Out[1]:
+Determines the derivative of  2q**3+q  at  q=1
+
+
+#2. Try to determine partial derivative 𝑢u of the following function 
+# where 𝑢=2u=2 and 𝑣=1v=1: 𝑓=𝑢𝑣+(𝑢𝑣)**2
+In[2]:
+import torch
+u=torch.tensor(2.0,requires_grad=True)
+v=torch.tensor(1.0,requires_grad=True)
+f=u*v+(v*v)**2
+f.backward()
+print("The result is ", u.grad)
+
+Out[2]: tensor(1.)
+
