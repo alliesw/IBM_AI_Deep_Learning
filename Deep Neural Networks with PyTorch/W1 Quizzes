@@ -50,13 +50,13 @@ transforms.Compose([add_mult(), mult()]
 __init__,__getitem__ and __len__
 
 # Explanation:
+#A custom Dataset class must implement three functions: __init__, __len__, and __getitem__. 
+
 #torch.utils.data.Dataset is an abstract class representing a dataset. Your custom dataset should inherit Dataset and override the following methods:
-
 # __len__ so that len(dataset) returns the size of the dataset.
-
 # __getitem__ to support the indexing such that dataset[i] can be used to get iith sample.
 
-#Let’s create a dataset class for our simple dataset. 
+#To create a dataset class for our simple dataset:
 #We will read the csv in __init__ but leave the reading of images to __getitem__. This is memory efficient because all the images 
 #are not stored in the memory at once but read as required.
 
